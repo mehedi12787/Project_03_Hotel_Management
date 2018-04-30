@@ -1,0 +1,97 @@
+body {
+	background-image: url(background.jpg);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fixed;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4CAF50;
+}
+
+li {
+    float: left;
+    border-right:  1px solid #bbb;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+li a:hover:not(.active) {
+    background-color: green;
+}
+
+
+.animate{
+    animation:fading 4s infinite
+}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+.slidepic{
+    max-width: 600px;
+    max-height: 350px;
+    margin-left: 100px;
+    margin-top: 60px;
+    border: 2px solid black;
+    background-color: black;
+}
+img {
+    height: 350px;
+}
+
+footer {
+    align-content: center;
+    height: 10px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 95%;
+}
+
+#division {
+    position: absolute;
+    top: 80px;
+    right: 150px;
+
+    border-style: outset;
+    border-width: 5px;
+    border-color: green;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 800px;
+
+    font-variant: small-caps;
+    font-size: 20px;
+
+}
+
+#dhk:link, #dhk:visited {
+    background-color: #4CAF50;
+    color: white;
+    width: 180px;
+    height: 30px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+#dhk:hover, #dhk:active {
+    background-color: black;
+}
+
+#right {
+    margin-left: 580px;
+    padding: 5px;
+    height: 200px;
+    width: 180px;
+}

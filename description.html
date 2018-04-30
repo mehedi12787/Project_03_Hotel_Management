@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Safe Residence</title>
+	<link rel="stylesheet" type="text/css" href="description.css">
+</head>
+<body>
+
+<ul>
+  <li><a href="index.php">Home</a></li>
+  <li><a href="#">Contact Us</a></li>
+  <li><a href="#">User Information</a></li>
+ </ul>
+ <br>
+
+<div class="slidepic">
+  <img class="mySlides animate" src="1.jpg" style="width:100%">
+  <img class="mySlides animate" src="2.jpg" style="width:100%">
+  <img class="mySlides animate" src="3.jpg" style="width:100%">
+  <img class="mySlides animate" src="4.jpg" style="width:100%">
+  <img class="mySlides animate" src="5.jpg" style="width:100%">
+  <img class="mySlides animate" src="6.jpg" style="width:100%">
+  <img class="mySlides animate" src="7.jpg" style="width:100%">
+  <img class="mySlides animate" src="8.jpg" style="width:100%">
+  <img class="mySlides animate" src="9.jpg" style="width:100%">
+  <img class="mySlides animate" src="10.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3500);    
+}
+</script>
+
+<div id = "division">
+	<p><a id = "dhk" href="dhaka.html">Dhaka</a></p>
+	<p><a id = "dhk" href="index.php">Chittagong</a></p>
+	<p><a id = "dhk" href="index.php">Khulna</a></p>
+	<p><a id = "dhk" href="index.php">Rajshahi</a></p>
+	<p><a id = "dhk" href="index.php">Sylhet</a></p>
+	<p><a id = "dhk" href="index.php">Rangpur</a></p>
+	<p><a id = "dhk" href="index.php">Barishal</a></p>
+	<p><a id = "dhk" href="index.php">Mymensingh</a></p>
+</div>
+
+<footer>
+    © 2017 TOURBDRES, Inc.  |  phone-1234567890  |  @facebook-TourBangladesh 
+</footer>
+</body>
+</html>
